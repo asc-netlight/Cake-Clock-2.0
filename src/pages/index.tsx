@@ -1,4 +1,4 @@
-import DemoComponent from "components/DemoComponent/DemoComponent";
+import CakeClockComponent from "../components/CakeClockComponent/CakeClockComponent"
 import { GetStaticProps, NextPage } from "next";
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
 };
 
 const IndexPage: NextPage<Props> = ({ buildTime }) => {
-  return <DemoComponent buildTime={buildTime} />;
+  return <CakeClockComponent />;
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {

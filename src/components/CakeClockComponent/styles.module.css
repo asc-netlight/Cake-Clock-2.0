@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e83c6;
+  text-align: center;
+  font-family: "Anonymous Pro", monospace !important;
+  color: white;
+}
+
+.title {
+  font-size: 4rem;
+  fill: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.counter {
+  background-color: #0e83c6;
+  position: relative;
+  padding: 3rem;
+  text-align: center;
+  font-size: 2.75rem;
+  font-family: "Anonymous Pro", monospace !important;
+  color: white;
+}
+
+.progress {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.cakes {
+  font-size: 1rem;
+  margin-top: 1rem;
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+.circle {
+  background-color: #dd0c6a;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.circleback {
+  background-color: #7a093c;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 25px;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+@keyframes colorcycle {
+  50% {
+    background-color: #dd0c6a;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
